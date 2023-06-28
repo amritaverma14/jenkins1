@@ -14,6 +14,9 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
+- task: CmdLine@2
+  inputs:
+    script: 'D:\apache-jmeter-5.5\apache-jmeter-5.5\bin\jmeter shift-left1.jmx -l Res1.jtl'
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
